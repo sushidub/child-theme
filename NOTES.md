@@ -1,6 +1,6 @@
 # @Fork Notes &mdash; *tonik-child-theme*
 
-> The following is the short list of additional items and small changes made to the original tonik/child-theme &mdash; [child theme](https://github.com/tonik/child-theme/tree/master). They're meant to work in conjuction with our [custom parent theme](https://github.com/sushidub/tonik-theme). Most of the major customizations here, are & will be conductucted on a forthcoming branch or cloned repo. One key addition we did make here tho was porting over and repurposing build tasks directly from parent theme [as suggested by tonik team](http://labs.tonik.pl/theme/docs/child-theme-development/). We also symlink to the parent node_modules folder.
+> The following is the short list of additional items and small changes made to the original [tonik/child-theme](https://github.com/tonik/child-theme/tree/master). They're meant to work in conjuction with our [custom parent theme](https://github.com/sushidub/tonik-theme). One key addition is the porting over and repurposing of build tasks directly from parent theme [as suggested by tonik team](http://labs.tonik.pl/theme/docs/child-theme-development/). We also symlink to the parent node_modules folder.
 
 ## `/`
 + symlink to [tonik-theme](https://github.com/sushidub/tonik-theme) `node-modules`
@@ -16,7 +16,7 @@
 
 ## `build`
 `- app.config.js`
-+ most changes here are related to further customizations made in forthcoming branch under the `paths` and `settings` properties
++ no changes for this branch
 
 `- webpack.config.js`
 + require the webpack visualizer plugin we installed in package.json
@@ -100,4 +100,4 @@ pathinfo: true
   add_action('theme/index/sidebar', __NAMESPACE__ . '\\render_sidebar');
   ```
   `/Http - assets.php`
-  + add the `register_wp_scripts()` and `register_scripts` functions *(see file for additional notes)*
+  + add the `register_wp_scripts` and `register_scripts` functions *(see file for additional notes)*
