@@ -7,7 +7,7 @@
 + duplicate `build` folder and contents from parent
 
 `- composer.json`
-+ add [`stoutlogic/acf-builder`](https://github.com/StoutLogic/acf-builder) as an addition to ACF Pro
++ add [`stoutlogic/acf-builder`](https://github.com/StoutLogic/acf-builder) as an addition to ACF Pro - *this is optional*
 
 `- package.json`
 + duplicate parent theme build tasks
@@ -15,6 +15,12 @@
 + adds `development` only plugin for [visualizing webpack details](https://github.com/chrisbateman/webpack-visualizer)
 
 ## `build`
+`/rules - javascript.js`
++ add the following to module.exports obj, otherwise running build tasks with certian flags will output eslint warnings/errors it finds in node_modules folder
+```js
+exclude: /node_modules/,
+```
+
 `- app.config.js`
 + no changes for this branch
 

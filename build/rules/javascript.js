@@ -6,5 +6,6 @@ const config = require('../app.config')
  */
 module.exports = {
   test: /\.js$/,
+  exclude: /node_modules/,
   loader: ['babel-loader', 'eslint-loader']
 }

@@ -76,7 +76,12 @@ module.exports = merge({
    */
   settings: {
     sourceMaps: env('SOURCEMAPS', true),
-    styleLint: true,
+    styleLint: {
+      //// @Fork: With the absence of any scss/sass compiled with `npm run dev`,
+      // ...the `settings.styleLint` property produces the following error:
+      // "Error: resources/assets/**/*.s?(c|a)ss does not match any files"
+      context: 'resources/assets/sass/'
+    },
     autoprefixer: {
       browsers: ['last 2 versions', '> 1%'],
     },
