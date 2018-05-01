@@ -4,6 +4,7 @@
 npm-debug.log
 Thumbs.db
 
-node_modules/
+# NOTE: folders that are actually symlinks should be added to .gitignore without a trailing forward slash '/', otherwise Git will not not ignore
+node_modules
 vendor/
 public/

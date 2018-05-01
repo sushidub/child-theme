@@ -1,4 +1,16 @@
 {
   "private": true,
-  "devDependencies": {}
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development webpack --progress --config build/webpack.config.js --verbose --display-modules",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production webpack --progress --config build/webpack.config.js --verbose --display-modules",
+    "watch": "npm run development -- --watch && webpack-dev-server --progress --colors",
+    "lint:js": "eslint .",
+    "stats": "cross-env NODE_ENV=development webpack --config build/webpack.config.js --verbose --json > stats.json"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "webpack-visualizer-plugin": "^0.1.11"
+  }
 }

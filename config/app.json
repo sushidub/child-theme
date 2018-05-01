@@ -1,0 +1,8 @@
+{
+  "assets": {
+    "main": [
+      "./resources/assets/js/main.js",
+      "./resources/assets/sass/main.scss"
+    ]
+  }
+}
