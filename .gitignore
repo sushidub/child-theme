@@ -4,6 +4,6 @@
 npm-debug.log
 Thumbs.db
 
-node_modules
-vendor
-public
+node_modules/
+vendor/
+public/
