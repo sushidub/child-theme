@@ -21,7 +21,7 @@ use function Tonik\Theme\Child\asset_path;
  * @return void
  */
 function register_stylesheets() {
-  wp_enqueue_style('tonik-child-theme', asset_path('css/child.css'));
+  wp_enqueue_style('tonik-child-theme', asset_path('css/main.css'));
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\register_stylesheets');
 

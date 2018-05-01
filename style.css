@@ -1,12 +1,12 @@
 /*
-Theme Name: {{ theme.name }}
+Theme Name: {{ tonik-child-theme }}
 Theme URI: {{ theme.url }}
-Description: {{ theme.description }}
-Template: theme
+Description: {{ tonik-child-theme }}
+Template: tonik-theme
 Version: {{ theme.version }}
 Author: {{ theme.author }}
 Author URI: {{ theme.author.url }}
-Text Domain: {{ theme.textdomain }}
+Text Domain: {{ tonik-child-textdomain }}
 License: GPLv2 License
 License URI: https://wordpress.org/about/gpl/
 */
