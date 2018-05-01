@@ -14,6 +14,10 @@
 + adds custom task for more debugging options
 + adds `development` only plugin for [visualizing webpack details](https://github.com/chrisbateman/webpack-visualizer)
 
+`- style.css`
++ replace whatever value the `Template:` string has with the name of the parent theme (WP uses this to cordinate parent/child theme relationship)
++ we're updating the `Text Domain:` string so we also update the `textdomain` value in `/Config - app.php`
+
 ## `build`
 `/rules - javascript.js`
 + add the following to module.exports obj, otherwise running build tasks with certian flags will output eslint warnings/errors it finds in node_modules folder
