@@ -18,6 +18,6 @@
     "indent": ["warn", 2],
     "no-console": "off",
     "no-undef": "warn",
-    "no-unused-vars": "warn"
+    "no-unused-vars": "off"
   }
 }

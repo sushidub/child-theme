@@ -88,8 +88,8 @@ module.exports = merge({
     browserSync: {
       host: env('BROWSERSYNC_HOST', 'localhost'),
       port: env('BROWSERSYNC_PORT', 3000),
-      proxy: env('BROWSERSYNC_PROXY', 'http://localhost:8080/'),
-      open: env('BROWSERSYNC_OPEN', false),
+      proxy: env('BROWSERSYNC_PROXY', 'https://jeremygraston.dev'),
+      open: env('BROWSERSYNC_OPEN', true),
       reloadDelay: env('BROWSERSYNC_DELAY', 500),
       files: [
         '*.php',
