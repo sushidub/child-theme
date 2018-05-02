@@ -87,6 +87,12 @@ pathinfo: true
   `/assets/sass`
   + add `main.scss` which will contain all of our `.scss` `@import` statements
 
+  `/assets/sass - main.scss`
+  + import normalize.scss since we're not using any of the other framework options that have it included, e.g. Foundation, Bootstrap.
+  ```scss
+  @import '~normalize-scss/sass/normalize/import-now';
+  ```
+
   ## `child`
   `/** -`
   #### *Optional namespacing safeguards for paths, hooks, & filters*
